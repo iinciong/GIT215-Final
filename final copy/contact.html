@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isabella Inciong">
+    <title>Alpine Serenity Lodge | Contact</title>
+    <meta name="description" content="Contact us for any questions or concerns. We are here to help you plan your dream vacation with us!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for hero image */
+        .hero-image {
+            background-image: url('images/swiss-valley.jpg');
+            background-size: cover;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1><a href="index.html">Alpine Serenity Lodge</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <div class="hero-image"></div>
+    <main class="grid-container">
+        <div class="contact-info">
+            <h4>Contact Us</h4>
+            <section id="contact-text">
+                <p>If you need any information, please fill out the form below. Required fields are marked with an asterisk (<span class="required">*</span>).</p>
+            </section>
+            <img src="images/swiss-peak.jpg" alt="Swiss Peak">
+        </div>
+        <section id="form">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <label for="my-name">Name<span class="required">*</span></label>
+                <input type="text" name="my-name" id="my-name" required>
+                <label for="my-address">Address</label>
+                <input type="text" name="my-address" id="my-address">
+                <label for="my-city">City</label>
+                <input type="text" name="my-city" id="my-city">
+                <label for="my-state">State</label>
+                <div id="arrow">
+                    <select name="my-state" id="my-state">
+                        <option value="">Choose Your State</option>
+                        <option value="al">AL</option>
+                        <!-- Add more state options here if needed -->
+                    </select>
+                </div>
+                <label for="my-zip">Zip Code</label>
+                <input type="number" name="my-zip" id="my-zip">
+                <label for="my-phone">Phone</label>
+                <input type="tel" name="my-phone" id="my-phone">
+                <label for="my-email">Email<span class="required">*</span></label>
+                <input type="email" name="my-email" id="my-email" required>
+                <fieldset class="contact-pref">
+                    <legend>Preferred Method of Contact</legend>
+                    <div class="radio-container">
+                        <div class="radio-box">
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <label for="my-comments">Comments</label>
+                <textarea name="my-comments" id="my-comments"></textarea>
+                <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright ©2024 - Alpine Serenity Lodge</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
